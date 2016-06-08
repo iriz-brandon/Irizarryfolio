@@ -66,10 +66,10 @@ void execWithBackgrounding(struct cmd command)
       bkgrndPid = getpid();
       execAfterConsideringBackgrounding(command, bkgrndPid);
     default:
-	    waitpid(bkgrndPid, NULL, 0);
+      waitpid(bkgrndPid, NULL, 0);
       return;	   
-	}
-	return;
+  }
+  return;
 }
      
 void execAfterConsideringBackgrounding(struct cmd command, pid_t bkgrndPid)
