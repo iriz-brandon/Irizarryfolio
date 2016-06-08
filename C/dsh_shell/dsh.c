@@ -24,7 +24,6 @@ struct cmd
   char *argv2[10];     /* Second program in pipe         */
 };
 
-
 void execAfterConsideringBackgrounding(struct cmd command, pid_t); /* Sends a pid to be killed */
 void execWithBackgrounding(struct cmd command);
 int cmdscan(char *cmdbuf, struct cmd *com);
