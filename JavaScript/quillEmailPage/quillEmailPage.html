@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Database Tool</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="css/supplement.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="stylesheet" type="text/css" href="Quill/quill.base.css">
+    <link rel="stylesheet" type="text/css" href="Quill/quill.snow.css">
+</head>
+
+<body>
+
+    <!-- Start container -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/home.html" >Tool <span id="envLabel" class="label ml10"></span></a>
+            </div>
+            <p class="navbar-text navbar-right">Signed in as <span id="currentUser" data-bind="text: currentUser"></span></p>
+            <div class="collapse navbar-collapse">
+            </div>
+        </div>
+    </div>
+    
+
+    <table width="420%">
+       <tr>
+			<td>
+		    <div class="basic-wrapper">
+			  <div id="basic-toolbar" class="toolbar">
+			    <select title="Size" class="ql-size">
+			      <option value="10px">Small</option>
+			      <option value="13px" selected="">Normal</option>
+			      <option value="18px">Large</option>
+			      <option value="32px">Huge</option>
+			    </select>
+			    <button class="ql-bold">Bold</button>
+			    <button class="ql-italic">Italic</button>
+			  </div>
+			  <div id="basic-editor" class="editor">
+			    <div><span style="font-size: 18px;">Type Message Here</span></div>
+			  </div>
+			</div>
+		    </td>
+			<br />
+	    </tr>
+
+        <tr>
+	      <td class="email-button">
+	      	Email User:<input type="text" id="single-user-email">
+			<input type="submit" value="Send" data-bind="click: sendEmail">
+			<input type="submit" value="Email To All Users" data-bind="click: sendEmailToAll">
+		  <td>
+	   </tr>
+    </table>
+
+    <!-- Include the Quill library -->
+	<script src="Quill/quill.js"></script>
+	<script src="Quill/quill.min.js"></script>
+	
+	<!-- Initialize Quill editor -->
+	<script>
+	  var basicEditor = new Quill('#basic-editor');
+      basicEditor.addModule('toolbar', {
+         container: '#basic-toolbar'
+      });
+	</script>
+
+	<script>console.log(basicEditor.getContents());</script>
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/knockout.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
