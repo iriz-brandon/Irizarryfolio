@@ -44,7 +44,8 @@ int main()
 
     if(strcmp(command.argv1[0],"exit") == 0){exit(1);}
 
-    if(command.background){
+    if(command.background)
+    {
       execWithBackgrounding(command);
     }else{
       execAfterConsideringBackgrounding(command, -1);
