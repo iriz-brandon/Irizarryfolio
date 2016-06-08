@@ -20,7 +20,7 @@
 # Java Folder
    
    This folder contains a Java project worked on while taking the Software Development concentration part of my 
-   Computer Science degree at UTSA. It also includes a runnable jar file for easy testing. 
+   Computer Science degree at UTSA. It also includes a runnable jar file for easy testing. Must have java installed.
    
    
 # JavaScript Folder
