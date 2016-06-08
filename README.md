@@ -10,13 +10,11 @@
 # C Folder
 
    This folder is made up of some code samples in C from class assignments at UTSA.
- 
   
 # Java Folder
    
    This folder contains a Java project worked on while taking the Software Development concentration part of my 
    Computer Science degree at UTSA. It also includes a runnable jar file for easy testing. Must have java installed.
-   
    
 # JavaScript Folder
      
@@ -25,7 +23,3 @@
   operations dealing with the cloud databases and user actions. These are examples of operations I implemented. Due 
   to the sensitive nature of the back-end for any app, I was asked to keep samples here to a minimum as to not reveal
   anything about their databases.    
-   
-   
-     
-  
