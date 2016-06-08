@@ -10,11 +10,6 @@
 # C Folder
 
    This folder is made up of some code samples in C from class assignments at UTSA.
-   
-# HTML_CSS Folder
-
-   This folder contains a code sample for a page I made in a web-app tool. I had to learn enough about the about the 
-   existing HTML/CSS, the Quill api, knockout.js, and incorporate mandrill to make it happen.
  
   
 # Java Folder
@@ -29,7 +24,7 @@
   that deals in application development mostly for iOS. Not being native to iOS, I was tasked more with back-end 
   operations dealing with the cloud databases and user actions. These are examples of operations I implemented. Due 
   to the sensitive nature of the back-end for any app, I was asked to keep samples here to a minimum as to not reveal
-  anything that could be a window into one of their databases.    
+  anything about their databases.    
    
    
      
