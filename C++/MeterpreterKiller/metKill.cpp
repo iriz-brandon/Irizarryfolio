@@ -2,7 +2,9 @@
 #include "windows.h"
 #include "stdio.h"
 #include "stdlib.h"
-#include "psapi.h"int main()
+#include "psapi.h"
+
+int main()
 {
     MEMORY_BASIC_INFORMATION mbi;
     int mypid, metflag = 0, killflag = 0;
