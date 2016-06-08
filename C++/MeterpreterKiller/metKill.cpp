@@ -33,7 +33,8 @@ int main()
                 killflag = 1;
             }
         }
-    }    if (killflag == 0) {
+    }    
+    if (killflag == 0) {
         printf("No meterpreter sessions found\n");
     }
     scanf_s("%d", &i);
