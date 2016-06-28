@@ -11,7 +11,9 @@ int main()
     HANDLE myProcess;
     unsigned char* p = NULL;
     DWORD aProcesses[1024], cbNeeded, cProcesses;
-    unsigned int i;    if (!EnumProcesses(aProcesses, sizeof(aProcesses), &cbNeeded)) {
+    unsigned int i;    
+    
+    if (!EnumProcesses(aProcesses, sizeof(aProcesses), &cbNeeded)) {
         return 1;
     }
     cProcesses = cbNeeded / sizeof(DWORD);
